@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Press";
+    src: url(Font/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Pangolin";
+    src: url(Font/Pangolin-Regular.ttf);
+}
+
+.header {
+    background-color: rgb(26, 255, 0);
+    font-family: "Press", sans-serif;
+}
+
+.header_title {
+    font-size: 3vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    padding-top: 25px;
+    gap: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    transition: 0.2s;
+    font-size: 1.5vw;
+    font-family: "Press", monospace;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    background-color: rgb(26, 255, 0);
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+header {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-family: "Press", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+footer p {
+    padding-bottom: 10px;
+}
+
+.main {
+    font-family: "Pangolin", sans-serif;
+    background: linear-gradient(rgba(255, 98, 0, 0.685), rgba(255, 0, 255, 0.39));
+}
+
+.title_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+.cal {
+    border-radius: 25px;
+    background-color: rgb(213 255 184);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 0.5s;
+    padding: 10px 30px 10px 30px;
+}
+
+input {
+    font-size: 20px;
+    width: 200px;
+    font-family: "pangolin", monospace;
+
+}
+
+button {
+    font-size: 20px;
+    font-family: "pangolin", monospace;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cali {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+}
+
+#height,
+#weight {
+    font-size: 25px;
+}
+
+.btt {
+    padding-top: 2px;
+}
+
+.img {
+    width: auto;
+    height: 270px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.id h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.piy {
+    background: white;
+    border-radius: 25px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.id p,
+.id li {
+    padding-left: 15px;
+}
+
+.top {
+    padding-top: 20px;
+}
+
+.id {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .header_title {
+        font-size: 8vw;
+        padding-left: 20px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 4vw;
+        padding-left: 20px;
+    }
+
+    .footer_title {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title_main {
+        background: white;
+        font-size: 15px;
+        padding-left: 0px;
+    }
+
+    .cali {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .name {
+        font-size: 8vw;
+    }
+
+    .title_main p {
+        font-size: 6vw;
+        padding-left: 6px;
+    }
+
+    .cal {
+        background: rgb(179, 179, 179);
+    }
+
+    .cal h1 {
+        font-size: 8vw;
+    }
+
+    .cal:hover {
+        background: rgb(179, 179, 179);
+        font-size: 30px;
+    }
+
+    .cal input {
+        width: 90%;
+    }
+
+    .cal button {
+        font-size: 6vw;
+    }
+
+    .img {
+        height: 270px;
+        width: 100%;
+    }
+
+    .img:hover {
+        height: 270px;
+    }
+
+    .id {
+        background: white;
+        border-radius: 25px;
+        padding-bottom: 10px;
+    }
+
+    .id h1 {
+        font-size: 7vw;
+        padding-left: 15px;
+    }
+
+    .id p {
+        font-size: 6vw;
+    }
+
+    .id li {
+        font-size: 6vw;
+    }
+
+}

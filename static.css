@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Press";
+    src: url(Font/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Pangolin";
+    src: url(Font/Pangolin-Regular.ttf);
+}
+
+.header {
+    background-color: rgb(26, 255, 0);
+    font-family: "Press", sans-serif;    
+}
+
+.header_title {
+    font-size: 3vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    transition: 0.2s;
+    font-size: 1.5vw;
+    font-family: "Press",monospace;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    background-color: rgb(26, 255, 0);
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+header {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-family: "Press", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+footer p {
+    padding-bottom: 10px;
+}
+
+.main {
+    font-family: "Pangolin", sans-serif;
+    background: linear-gradient(rgb(255, 69, 69),rgb(225, 255, 0));
+    display: flex;
+    flex-direction: row;
+} 
+
+.name {
+    display: flex;
+    justify-content: center;
+}
+
+.txt {
+    background: white;
+    border-radius: 25px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.info {
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info p {
+    padding-top: 10px;
+}
+
+.info p {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 767px) {
+    .header_title {
+        font-size: 8vw;
+        padding-left: 20px;
+    }
+    .nav  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 4vw;
+        padding-left: 20px;
+    }
+
+    .footer_title {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt {
+        background: white;
+        font-size: 20px;
+    }
+
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .txt:hover {
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .name {
+        font-size: 8vw;
+    }
+
+    .info p {
+        font-size: 6vw;
+    }
+
+     
+}

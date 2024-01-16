@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Press";
+    src: url(Font/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Pangolin";
+    src: url(Font/Pangolin-Regular.ttf);
+}
+
+.header {
+    background-color: rgb(26, 255, 0);
+    font-family: "Press", sans-serif;    
+}
+
+.header_title {
+    font-size: 3vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    transition: 0.2s;
+    font-size: 1.5vw;
+    font-family: "Press",monospace;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    background-color: rgb(26, 255, 0);
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.content {
+    display: flex;
+    padding-top: 25px;
+    gap: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Pangolin', monospace;
+    justify-content: space-around;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.menu a {
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+button {
+    font-family: 'Pangolin', monospace;
+    font-size: 1.9vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(26, 255, 0);
+    transition: 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.diet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    width: 80vw;
+
+}
+
+#dayN {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(255, 59, 59);
+}
+
+.menu a {
+    text-decoration: none;
+    color: red;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-family: "Press", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+footer p {
+    padding-bottom: 10px;
+}
+
+main {
+    background: linear-gradient(rgb(234, 0, 255), rgb(13, 255, 0));
+}
